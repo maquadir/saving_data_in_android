@@ -41,8 +41,13 @@ import com.raywenderlich.android.simplenote.model.*
  */
 class MainActivity : AppCompatActivity() {
 
+  //saving data in internal storage
 //  private val repo: NoteRepository by lazy { InternalFileRepository(this) }
+
+  //saving data in external storage
 //  private val repo by lazy { ExternalFileRepository(this) }
+
+  //saving encrypted data in external storage
   private val repo by lazy { EncryptedFileRepository(this) }
 
   private lateinit var binding: ActivityMainBinding
